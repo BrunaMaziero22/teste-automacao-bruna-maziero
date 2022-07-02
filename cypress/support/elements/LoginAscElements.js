@@ -18,7 +18,11 @@ class LoginAscElements {
 
     txt_notificacao = () => {return 'h1'}
 
-    btn_salvar = () => {return 'btn-info'}
+    btn_salvar = () => {return '.btn-info'}
+
+    btn_voltar = () => {return '#btnVoltar'}
+
+    validar_mensagem = () => {return '#tblBody > :nth-child(1) > :nth-child(3)'}
 
 }
 export default LoginAscElements; 

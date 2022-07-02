@@ -54,12 +54,17 @@ class LoginAscPage {
             .should ('be.visible')
             .and ('have.text', ' Notificações de agente')
 
+            cy.get(AscElements.btn_voltar())
+            .and ('have.text', 'Voltar')
+
             cy.get(AscElements.btn_salvar())
             .should ('be.visible')
             .and ('have.text', ' Salvar')
+            .click()
 
-            
-
+            cy.get(AscElements.validar_mensagem())
+            .should ('be.visible')
+            .and ('have.text', 'Teste Bruna - QA')
 
 
 
