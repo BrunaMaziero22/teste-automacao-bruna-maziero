@@ -20,10 +20,5 @@ class LoginAscElements {
 
     btn_salvar = () => {return 'btn-info'}
 
-    
-
-
-
-
 }
 export default LoginAscElements; 
