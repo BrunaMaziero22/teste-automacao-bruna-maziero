@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-01-10T14:36:59.707Z",
+    "end": "2022-01-10T14:36:59.901Z",
+    "duration": 194,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "3e308ca4-87b3-40a3-a159-a511aa70b7fc",
+      "title": "",
+      "fullFile": "cypress/integration/compraPremium.feature",
+      "file": "cypress/integration/compraPremium.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "aa5184f4-aa56-48f8-ba13-a186782cc2dd",
+          "title": "Compra Premium",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Compra Premium Anual",
+              "fullTitle": "Compra Premium Compra Premium Anual",
+              "timedOut": null,
+              "duration": 153,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "TypeError: vitrine.iframe_planos is not a function",
+                "estack": "TypeError: vitrine.iframe_planos is not a function\n    at CompraPremiumPage.AbrirPremium (https://tchml.tradersclub.com.br/__cypress/tests?p=cypress/integration/compraPremium.feature:1663:25)\n    at Context.eval (https://tchml.tradersclub.com.br/__cypress/tests?p=cypress/integration/compraPremium.feature:2012:11)\n    at Context.resolveAndRunStepDefinition (https://tchml.tradersclub.com.br/__cypress/tests?p=cypress/integration/compraPremium.feature:12499:29)\n    at Context.eval (https://tchml.tradersclub.com.br/__cypress/tests?p=cypress/integration/compraPremium.feature:11820:35)",
+                "diff": null
+              },
+              "uuid": "a79cff7c-4690-41a0-90f1-052c4e6fb490",
+              "parentUUID": "aa5184f4-aa56-48f8-ba13-a186782cc2dd",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "a79cff7c-4690-41a0-90f1-052c4e6fb490"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 153,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false
+      },
+      "version": "5.2.0"
+    }
+  }
+}

@@ -1,0 +1,1 @@
+./node_modules/.bin/cypress run --config-file ./cypress/config/cypress.prod.json

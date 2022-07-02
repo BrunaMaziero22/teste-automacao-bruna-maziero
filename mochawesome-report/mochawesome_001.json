@@ -1,0 +1,121 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-12-02T21:27:38.920Z",
+    "end": "2021-12-02T21:27:54.155Z",
+    "duration": 15235,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0598be19-ba7c-4a8a-a8aa-6c79b48a6599",
+      "title": "",
+      "fullFile": "cypress/integration/vitrine.feature",
+      "file": "cypress/integration/vitrine.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7c942cdb-d6ae-4513-8748-dda9fbc3742e",
+          "title": "Validar vitrine",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validar Vitrine",
+              "fullTitle": "Validar vitrine Validar Vitrine",
+              "timedOut": null,
+              "duration": 8641,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "90effded-54a3-419b-a8ad-2862cf0c0cf2",
+              "parentUUID": "7c942cdb-d6ae-4513-8748-dda9fbc3742e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validar Planos por tipo de investimento",
+              "fullTitle": "Validar vitrine Validar Planos por tipo de investimento",
+              "timedOut": null,
+              "duration": 6475,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "e1390351-1eb7-437b-97b4-b98690e40e2a",
+              "parentUUID": "7c942cdb-d6ae-4513-8748-dda9fbc3742e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "90effded-54a3-419b-a8ad-2862cf0c0cf2",
+            "e1390351-1eb7-437b-97b4-b98690e40e2a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 15116,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false
+      },
+      "version": "5.2.0"
+    }
+  }
+}

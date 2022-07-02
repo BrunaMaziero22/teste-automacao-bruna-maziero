@@ -1,0 +1,15 @@
+{
+    "baseUrl" : "https://sacnew.ascbrazil.com.br/login",
+
+
+
+    "viewportWidth" : 1680,
+    "viewportHeight" : 1050,
+    "defaultCommandTimeout": 10000,
+
+    "reporter": "mochawesome",
+    "reporterOptions": {
+    "overwrite":false
+    }
+}
+ 
